@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Video YouTube Mockup</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Video YouTube Mockup (Beta)</title>
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	 -->
+
+	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-video.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script src="js/app-video.js"></script>
 </head>
 <body>
 <nav>
@@ -20,7 +26,7 @@
 				
 			
 			
-			<a href="">
+			<a href="#">
 				<img class="yt-logo" src="img/youtube-logo.png" alt="YouTube Logo">
 			</a>
 			<div class="search-panel">
@@ -35,13 +41,13 @@
 
 		
 		<div class="top-right">
-			<a href=""> 
+			<a href="#"> 
 				<span class="glyphicon glyphicon-open"></span>
 			</a>
-			<a href="">
+			<a href="#">
 				<span class="glyphicon glyphicon-bell"></span>
 			</a>    
-			<a href="">
+			<a href="#">
 				<span class="glyphicon glyphicon-user"></span>
 			</a>
 		</div>
@@ -49,45 +55,45 @@
 	<div></div>
 	<div class="side-nav">
 		<ul class="side-nav-ul">
-			<li><span class="glyphicon glyphicon-home"></span><a href="">Головна</a></li>
-			<li><span class="glyphicon glyphicon-user"></span><a href="">Мій канал</a></li>
-			<li><span class="glyphicon glyphicon-fire"></span><a href="">Популярне</a></li>
-			<li><span class="glyphicon glyphicon-expand"></span><a href="">Підписки</a></li>
-			<li><span class="glyphicon glyphicon-book"></span><a href="">Історія</a></li>
-			<li><span class="glyphicon glyphicon-time"></span><a href="">Переглянути пізніше</a></li>
+			<li><span class="glyphicon glyphicon-home"></span><a href="#">Головна</a></li>
+			<li><span class="glyphicon glyphicon-user"></span><a href="#">Мій канал</a></li>
+			<li><span class="glyphicon glyphicon-fire"></span><a href="#">Популярне</a></li>
+			<li><span class="glyphicon glyphicon-expand"></span><a href="#">Підписки</a></li>
+			<li><span class="glyphicon glyphicon-book"></span><a href="#">Історія</a></li>
+			<li><span class="glyphicon glyphicon-time"></span><a href="#">Переглянути пізніше</a></li>
 		</ul>
 		
 		<div class="playlist">
 			<span>Списки відтворення</span>
-			<ul class="side-nav-ul"><li><span class="glyphicon glyphicon-thumbs-up"></span><a href="">Відео, які сподобалися</a></li></ul>
+			<ul class="side-nav-ul"><li><span class="glyphicon glyphicon-thumbs-up"></span><a href="#">Відео, які сподобалися</a></li></ul>
 		</div>
 		
 		<div class="playlist">
 			<span>Підписки</span>
 			<ul class="side-nav-ul">
-				<li><a href="">442oons</a></li>
-				<li><a href="">NBA</a></li>
-				<li><a href="">loftblog</a></li>
-				<li><a href="">SpecialistTV</a></li>
-				<li><a href="">Showtime</a></li>
-				<li><a href="">JohnCallianoTV</a></li>
-				<li><a href="">HBO</a></li>
+				<li><a href="#">442oons</a></li>
+				<li><a href="#">NBA</a></li>
+				<li><a href="#">loftblog</a></li>
+				<li><a href="#">SpecialistTV</a></li>
+				<li><a href="#">Showtime</a></li>
+				<li><a href="#">JohnCallianoTV</a></li>
+				<li><a href="#">HBO</a></li>
 			</ul>
 		</div>
-		<ul class="side-nav-ul"><li><span class="glyphicon glyphicon-plus-sign"></span><a href="">Переглянути канали</a></li></ul>
-		<ul class="side-nav-ul"><li><span class="glyphicon glyphicon-film"></span><a href="">Фільми YouTube</a></li></ul>
+		<ul class="side-nav-ul"><li><span class="glyphicon glyphicon-plus-sign"></span><a href="#">Переглянути канали</a></li></ul>
+		<ul class="side-nav-ul"><li><span class="glyphicon glyphicon-film"></span><a href="#">Фільми YouTube</a></li></ul>
 		
 	</div>
 	<div class="under-nav">
 		<ul class="nav-sections">
 			<li>
-				<a href="">Головна</a>
+				<a href="#">Головна</a>
 			</li>
 			<li>
-				<a href="">Популярне</a>
+				<a href="#">Популярне</a>
 			</li>
 			<li>
-				<a href="">Підписки</a>
+				<a href="#">Підписки</a>
 			</li>
 		</ul>
 	</div>
@@ -99,121 +105,42 @@
 	
 	<!-- begin container -->
 	<div class="video-container">
-		<!-- begin recommender -->
-		<div class="recommended">
+
+		<!-- begin main-video -->
+		<div class="main-video">
+			<iframe width="853" height="480" src="https://www.youtube.com/embed/1-xGerv5FOk?controls=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+			<!-- begin video-panel -->
+			<div class="video-panel">
+				<span class="video-name-pn">Video Name</span>
+					<span class="video-info"><span class="glyphicon glyphicon-expand"></span><a href="#">Video Author</a></span>
+			</div>
+			<!-- end video-panel -->
+		</div>
+		<!-- end main-video -->
+		<!-- begin video-nav -->
+		<div class="video-nav">
 			<ul class="ul-video">
 				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
+					<a href="#">
+						<img src="img/smaller.jpg" height="110" alt="">
 					</a>
-					<span><a href="" class="video-name">Video Name</a><span class="glyphicon glyphicon-option-vertical"></span></span>
-					<span class="video-info"><a href="">Video Author</a></span>
-					<span class="video-info">19088 переглядів</span>
-				</li>
-				<li class="li-video">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/1-xGerv5FOk" frameborder="0" allowfullscreen></iframe>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
+					<span class="video-name-holder">
+						
+						<span><a href="#" class="video-name">Video Name</a></span>
+						<span class="video-info"><a href="#">Video Author</a></span>
+					</span>
 				</li>
 
 			</ul>
 		</div>
-		<!-- end recommender -->
-		<!-- begin new-uploads -->
-		<div class="new-uploads">
-			<ul class="ul-video">
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-
-			</ul>
-		</div>
-		<!-- end new-uploads -->
-		<!-- begin watch-again -->
-		<div class="watch-again">
-			<ul class="ul-video">
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-				<li class="li-video">
-					<a href="">
-						<img src="img/example.jpg" height="110" alt="">
-					</a>
-				</li>
-
-			</ul>
-		</div>
-		<!-- end watch-again -->
-	</div>
-	<!-- end container -->
-
+		<!-- end video-nav -->
+		
 </div>
 <!-- end main-body -->
-<footer>
+<footer id="foot">
 	<div class="top-part-footer">
-		<a href="">
+		<a href="#">
 			<img class="yt-logo" src="img/youtube-logo.png" alt="YouTube Logo">
 		</a>
 		<!-- Small button group -->
@@ -236,50 +163,49 @@
 	<div class="bottom-part-footer">
 		<ul class="footer-ul-1">
 			<li>
-				<a href="">Інфо</a>
+				<a href="#">Інфо</a>
 			</li>
 			<li>                    
-				<a href="">Преса</a>
+				<a href="#">Преса</a>
 			</li>
 			<li>                
-				<a href="">Авторські права</a>
+				<a href="#">Авторські права</a>
 			</li>
 			<li>
-				<a href="">Творці</a>               
+				<a href="#">Творці</a>               
 			</li>
 			<li>                
-				<a href="">Реклама</a>
+				<a href="#">Реклама</a>
 			</li>
 			<li>                
-				<a href="">Розробники</a>
+				<a href="#">Розробники</a>
 			</li>
 			<li>
-				<a href="">+YouTube</a>             
+				<a href="#">+YouTube</a>             
 			</li>
 		</ul>
 		
 		<ul class="footer-ul-2">
 			<li>
-				<a href="">Умови</a>
+				<a href="#">Умови</a>
 			</li>
 			<li>
-				<a href="">Конфіденційність</a>
+				<a href="#">Конфіденційність</a>
 			</li>
 			<li>
-				<a href="">Політика та безпека</a>
+				<a href="#">Політика та безпека</a>
 			</li>
 			<li>
-				<a href="">Надіслати відгук</a>
+				<a href="#">Надіслати відгук</a>
 			</li>
 			<li>
-				<a href="">Спробувати нові функції</a>
+				<a href="#">Спробувати нові функції</a>
 			</li>
 			<li>© 2017 YouTube, LLC</li>
 		 </ul> 
 	</div>  
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-<script src="js/app.js"></script>
+
 </body>
 </html>

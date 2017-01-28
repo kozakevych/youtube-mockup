@@ -88,7 +88,11 @@ div.main-nav, footer {
 footer {
 	padding-top: 12px;
 	background: #FFFFFF;
-	height: 130px;
+	min-height: 130px;
+}
+
+footer div.top-part-footer > a {
+	text-decoration: none;
 }
 
 img.yt-logo {
@@ -104,6 +108,10 @@ img.yt-logo {
 
 .top-right .glyphicon {
 	margin-left: 6px;
+}
+
+.top-right .glyphicon:hover, .top-left .glyphicon:hover {
+	color: #3C3C3C;
 }
 
 .glyphicon {
@@ -156,6 +164,7 @@ ul {
 
 footer {
 	padding-left: 260px;
+	border-top: 1px solid #e0e0e0;
 }
 
 .video-container {
@@ -163,13 +172,16 @@ footer {
 	width: 95%;
 	background: #FFFFFF;
 	padding: 20px;
+	box-shadow: 1px 1px 7px #888888;
 }
 
 .video-container .ul-video{
+	padding-top: 15px;
+	border-top: 1px solid #e0e0e0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+    padding-left: 0px;
 }
 
 .footer-ul-1, .footer-ul-2 {
@@ -198,6 +210,7 @@ footer {
 .main-body .li-video {
 	display: flex;
 	flex-direction: column;
+	margin: 10px 4px;
 }
 
 .main-body .li-video > span.video-info {
@@ -219,4 +232,8 @@ footer {
 
 .main-body .li-video span a.video-name {
 	width: 80%;
+}
+
+div.main-body div.video-section {
+
 }
