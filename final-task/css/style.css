@@ -237,3 +237,35 @@ footer {
 div.main-body div.video-section {
 
 }
+
+@media screen and (max-width: 960px) {
+    .side-nav {
+    	display: none;
+    }
+    .under-nav {
+		display: none;
+		padding-left: 0;
+	}
+
+	.nav-offset {
+    	height: 70px;
+	}
+
+	.main-body {padding: 0;}
+
+	footer#foot {
+		padding-left: 32px;
+	}
+
+	nav img.yt-logo {
+		margin-right: 4px;
+		display: none;
+	}
+
+
+	.top-left a {
+		margin-right: 4px;
+		background: url(../img/favicon.png);
+	}
+
+}
