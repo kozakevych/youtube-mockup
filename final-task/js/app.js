@@ -1,5 +1,17 @@
 $(function (){
 
+  	if ( $(window).width() < 752 ){
+	    $(".yt-logo").attr("src", "img/favicon.png");
+	    $(".top-right").hide();	
+		$(".side-nav").hide();
+		$(".under-nav").css("padding-left", 0);
+		$(".main-body").css("padding-left", 0);
+		$("footer").css("padding-left", 32);
+	} else {
+	    $(".yt-logo").attr("src", "img/youtube-logo.png");
+	    $(".top-right").show();	
+	}
+
 	$("#toggle").click( function(){
 		if ( $(".side-nav").is(":visible") ){
 			$(".side-nav").hide();
@@ -16,11 +28,9 @@ $(function (){
 		}
 	});
 
-	// run test on initial page load
-    //checkSize();
-    // run test on resize of the window
-    $(window).resize(function(){
-	  	if ( $(window).width() < 752 ){
+
+	$( $(window).resize(function(){
+		if ( $(window).width() < 752 ){
 		    $(".yt-logo").attr("src", "img/favicon.png");
 		    $(".top-right").hide();	
 			$(".side-nav").hide();
@@ -29,8 +39,22 @@ $(function (){
 			$("footer").css("padding-left", 32);
 		} else {
 		    $(".yt-logo").attr("src", "img/youtube-logo.png");
-		    $(".top-right").show();	
+		    $(".top-right").show();
+			$(".side-nav").show();
+			$(".under-nav").css("padding-left", 230);
+			$(".main-body").css("padding-left", 230);
+			$("footer").css("padding-left", 260);
 		}
-	});
+	}))
+	// run test on initial page load
+    //checkSize();
+    // run test on resize of the window
+    
+
+    $(".video-name").on("click", function(){
+    	localStorage.setItem("nameVideo", $(this).text());
+    	;
+    	localStorage.setItem("nameCut", $(this).text().replace(/\s+/g, ''));
+    });
 
 })
