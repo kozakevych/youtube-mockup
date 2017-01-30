@@ -38,6 +38,7 @@ div.side-nav ul.side-nav-ul li {
 
 div.side-nav div.playlist ul.side-nav-ul li#liked-video {
 	height: 42px;
+	font-size: 12px;
 }
 
 div.side-nav ul.side-nav-ul li a {
@@ -54,6 +55,7 @@ div.side-nav ul.side-nav-ul li a {
     width: 184px;
     height: 100%;
 	padding-left: 5px;
+	font-size: 12px;
 }
 
 div.side-nav ul.side-nav-ul li a span {
@@ -83,6 +85,7 @@ div.side-nav {
 	background: #FFFFFF;
 	position: fixed;
 	border-right: 1px solid #E1E1E1;
+	padding-top: 12px;
 }
 
 nav {
