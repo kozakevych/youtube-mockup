@@ -1,14 +1,14 @@
 $(function (){
 
   	if ( $(window).width() < 752 ){
-	    $(".yt-logo").attr("src", "img/favicon.png");
+	    $("#yt-logo-top").attr("src", "img/favicon.png");
 	    $(".top-right").hide();	
 		$(".side-nav").hide();
 		$(".under-nav").css("padding-left", 0);
 		$(".main-body").css("padding-left", 0);
 		$("footer").css("padding-left", 32);
 	} else {
-	    $(".yt-logo").attr("src", "img/youtube-logo.png");
+	    $("#yt-logo-top").attr("src", "img/youtube-logo.png");
 	    $(".top-right").show();	
 	}
 
@@ -31,14 +31,14 @@ $(function (){
 
 	$( $(window).resize(function(){
 		if ( $(window).width() < 752 ){
-		    $(".yt-logo").attr("src", "img/favicon.png");
+		    $("#yt-logo-top").attr("src", "img/favicon.png");
 		    $(".top-right").hide();	
 			$(".side-nav").hide();
 			$(".under-nav").css("padding-left", 0);
 			$(".main-body").css("padding-left", 0);
 			$("footer").css("padding-left", 32);
 		} else {
-		    $(".yt-logo").attr("src", "img/youtube-logo.png");
+		    $("#yt-logo-top").attr("src", "img/youtube-logo.png");
 		    $(".top-right").show();
 			$(".side-nav").show();
 			$(".under-nav").css("padding-left", 230);
