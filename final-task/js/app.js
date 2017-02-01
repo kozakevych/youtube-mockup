@@ -12,7 +12,7 @@ $(function (){
 	    $(".top-right").show();	
 	}
 
-	if ( location.href == "https://kozakevych.github.io/youtube-mockup/final-task/index.html" || location.href == "https://kozakevych.github.io/youtube-mockup/final-task/") {
+	if ( location.pathname == "/youtube-mockup/final-task/index.html" || location.pathname == "/youtube-mockup/final-task/index.html#" || location.pathname == "/youtube-mockup/final-task/" || location.pathname == "/youtube-mockup/final-task/#") {
 		$(".nav-sections a#main-page-link").css("border-bottom", "3px solid #D61212");
 	}
 
