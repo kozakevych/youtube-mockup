@@ -71,6 +71,15 @@ div.side-nav ul.side-nav-ul li a:hover span {
 	color: #FFFFFF;
 }
 
+div.side-nav ul.side-nav-ul li a#side-link-main {
+	color: #FFFFFF;
+	background: #D80000;
+}
+
+div.side-nav ul.side-nav-ul li a#side-link-main span { 
+	color: #FFFFFF;
+}
+
 div.side-nav div.playlist > span {
 	text-transform: uppercase;
 	font-size: 11px;
@@ -171,6 +180,10 @@ ul {
 }
 
 .nav-sections a:hover {
+	border-bottom: 3px solid #D61212;
+}
+
+.nav-sections a#main-page-link {
 	border-bottom: 3px solid #D61212;
 }
 
