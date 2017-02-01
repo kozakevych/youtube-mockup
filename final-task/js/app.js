@@ -12,6 +12,11 @@ $(function (){
 	    $(".top-right").show();	
 	}
 
+	if ( location.href == "https://kozakevych.github.io/youtube-mockup/final-task/index.html" || location.href == "https://kozakevych.github.io/youtube-mockup/final-task/") {
+		$(".nav-sections a").css("border-bottom", "3px solid #D61212");
+	}
+
+
 	$("#toggle").click( function(){
 		if ( $(".side-nav").is(":visible") ){
 			$(".side-nav").hide();
