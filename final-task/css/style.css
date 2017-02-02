@@ -122,11 +122,13 @@ footer {
 	padding-top: 12px;
 	background: #FFFFFF;
 	min-height: 130px;
+	margin-top: auto;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
 }
 
 footer div.top-part-footer > a {
