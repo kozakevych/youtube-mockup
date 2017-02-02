@@ -1,6 +1,6 @@
 .side-nav {
 	display: none;
-    box-shadow: 1px 0px 20px #888888;
+    box-shadow: 1px 3px 5px #888888;
 }
 
 .under-nav {
@@ -20,7 +20,7 @@ footer#foot {
 }
 
 div.main-body div.main-video {
-	background: transparent;
+	background: #000000;
 }
 
 .video-nav {

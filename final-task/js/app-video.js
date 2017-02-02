@@ -1,10 +1,6 @@
 
 $(function (){
 	
-	//$(".side-nav").hide();
-	//$(".under-nav").css("padding-left", 0);
-	//$(".main-body").css("padding-left", 0);
-	//$("footer").css("padding-left", 32);
 	if (localStorage.videoSrc == "undefined"){
 		localStorage.videoSrc = "B7VSlGBg5KQ";
 	}
@@ -20,23 +16,36 @@ $(function (){
 		}
 	});
 
+
+  	if ( $(window).width() < 752 ){
+	    $("#yt-logo-top").attr("src", "img/favicon.png");
+	    $("#video-frame").attr("width","560");
+	    $("#video-frame").attr("height","315");
+	    $(".top-right").hide();
+	} else {
+	    $("#yt-logo-top").attr("src", "img/youtube-logo.png");
+	    $(".top-right").show();	
+	}
+
+
+
+	$( $(window).resize(function(){
+		if ( $(window).width() < 752 ){
+		    $("#yt-logo-top").attr("src", "img/favicon.png");
+		    $("#video-frame").attr("width","560");
+		    $(".top-right").hide();
+		} else {
+		    $("#yt-logo-top").attr("src", "img/youtube-logo.png");
+		    $(".top-right").show();
+		    $("#video-frame").attr("height","315");
+		    $("#video-frame").attr("width","853");
+		    $("#video-frame").attr("height","480");
+		}
+	}))
+
+
 })
-/*
-var localkey = localStorage.namevideo;
-var listOfVideos = {
-	"AlanWalker-Alone" : "0",
-	"Fight Night Denver" : "B7VSlGBg5KQ"
-}
 
-var index = -1;
-for(var i = 0, len = listOfVideos.length; i < len; i++) {
-    if (listOfVideos[i] === localkey) {
-        index = i;
-        break;
-    }
-}*/
-/*
 
-myArray.map(x => x.hello).indexOf('stevie')
-
-myArray.findIndex(x => x.hello === 'stevie')*/
+//640 360
+//560 315
