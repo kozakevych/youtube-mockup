@@ -82,5 +82,17 @@ $(function (){
 		}
 	}))
 
+	
+    $(".video-link").on("click", function(){
+    	localStorage.setItem("videoSrc", $(this).attr("data-video-src"));
+    });
+
+    $("#lang-toggle").on("click", function(){
+		if ( $(".language-menu").is(":visible") ){
+			$(".language-menu").fadeOut();
+		} else {
+			$(".language-menu").fadeIn();
+		}
+	});
 })
 

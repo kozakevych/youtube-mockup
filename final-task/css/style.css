@@ -125,6 +125,10 @@ footer div.top-part-footer > a {
 	text-decoration: none;
 }
 
+footer div.top-part-footer div.btn-group {
+	margin-left: 10px;
+}
+
 img.yt-logo {
     width: auto;
     height: 30px;
@@ -200,6 +204,41 @@ footer {
 	padding-left: 260px;
 	border-top: 1px solid #e0e0e0;
 }
+
+footer div.language-menu {
+	margin-top: 20px;  
+	margin-bottom: 20px;  
+    border-bottom: 1px solid #e0e0e0;
+}
+
+footer div.language-menu ul li a {
+	font-size: 11px;
+}
+
+footer div.language-menu ul li a#ukrainian {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer div.language-menu p.lang-description span {
+	font-size: 12px;
+}
+
+footer div.language-menu p.lang-description {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 11px;
+}
+
+footer div.language-menu div.ul-cont-lang {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
 
 .video-container {
 	margin: 0 auto;
@@ -284,9 +323,6 @@ footer {
 		display: none;
 		padding-left: 0;
 	}
-	.video-container .ul-video{
-	    justify-content: center;
-	}
 	
 	nav .main-nav .top-right a {
 		display: none;
@@ -315,5 +351,11 @@ footer {
 @media screen and (max-width: 948px) and (min-width: 769px) {
 	nav .main-nav .top-right a {
 		display: none;
+	}
+}
+
+@media all and (max-width: 703px) {
+	.video-container .ul-video{
+	    justify-content: center;
 	}
 }

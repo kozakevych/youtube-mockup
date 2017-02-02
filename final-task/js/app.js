@@ -12,10 +12,6 @@ $(function (){
 	    $(".top-right").show();	
 	}
 
-	//if ( location.pathname == "/youtube-mockup/final-task/index.html" || location.pathname == "/youtube-mockup/final-task/index.html#" || location.pathname == "/youtube-mockup/final-task/" || location.pathname == "/youtube-mockup/final-task/#") {
-	//	$(".nav-sections a#main-page-link").css("border-bottom", "3px solid #D61212");
-	//}
-
 
 	$("#toggle").click( function(){
 		if ( $(".side-nav").is(":visible") ){
@@ -60,4 +56,11 @@ $(function (){
     	localStorage.setItem("videoSrc", $(this).attr("data-video-src"));
     });
 
+    $("#lang-toggle").on("click", function(){
+		if ( $(".language-menu").is(":visible") ){
+			$(".language-menu").fadeOut();
+		} else {
+			$(".language-menu").fadeIn();
+		}
+	});
 })
