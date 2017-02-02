@@ -18,6 +18,9 @@ div.main-nav div.top-left > button {
 	margin-right: 15px;
 }
 
+div.main-nav div.top-left > button:focus {
+	outline:none;
+} 
 
 body {
 	background: #f1f1f1;
@@ -314,7 +317,6 @@ footer div.language-menu div.ul-cont-lang, footer div.location-menu div.ul-cont-
 }
 
 
-
 @media all and (max-width: 768px) {
 	.side-nav {
     	display: none;
@@ -357,5 +359,15 @@ footer div.language-menu div.ul-cont-lang, footer div.location-menu div.ul-cont-
 @media all and (max-width: 703px) {
 	.video-container .ul-video{
 	    justify-content: center;
+	}
+}
+
+
+@media all and (max-width: 416px) {
+	footer div.top-part-footer  div.btn-group {
+		margin-left: 0px;
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
 	}
 }

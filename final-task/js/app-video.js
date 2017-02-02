@@ -10,9 +10,9 @@ $(function (){
 
 	$("#toggle").click( function(){
 		if ( $(".side-nav").is(":visible") ){
-			$(".side-nav").hide();
+			$(".side-nav").fadeOut();
 		} else {
-			$(".side-nav").show();
+			$(".side-nav").fadeIn();
 		}
 	});
 
