@@ -46,8 +46,8 @@ $(function (){
 
 	//for lower than 450 px
 	if ( $(window).width() < 450 ){
-	    $("#video-frame").attr("width","426");
-	    $("#video-frame").attr("height","240");
+	    $("#video-frame").attr("width","300");
+	    $("#video-frame").attr("height","169");
 	} else if ( $(window).width() < 862 ){	
 	    $("#video-frame").attr("width","560");
 	    $("#video-frame").attr("height","315");
@@ -55,8 +55,8 @@ $(function (){
 
 	$( $(window).resize(function(){
 		if ( $(window).width() < 450 ){
-		    $("#video-frame").attr("width","426");
-	    	$("#video-frame").attr("height","240");
+		    $("#video-frame").attr("width","300");
+	    	$("#video-frame").attr("height","169");
 		} else if ( $(window).width() < 862 ){
 		    $("#video-frame").attr("width","560");
 		    $("#video-frame").attr("height","315");
