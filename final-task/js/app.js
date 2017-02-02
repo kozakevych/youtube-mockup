@@ -59,8 +59,22 @@ $(function (){
     $("#lang-toggle").on("click", function(){
 		if ( $(".language-menu").is(":visible") ){
 			$(".language-menu").fadeOut();
+		} else if ( $(".location-menu").is(":visible") ){
+			$(".location-menu").fadeOut();
+			$(".language-menu").fadeIn();
 		} else {
 			$(".language-menu").fadeIn();
+		}
+	});
+
+	 $("#location-toggle").on("click", function(){
+		if ( $(".location-menu").is(":visible") ){
+			$(".location-menu").fadeOut();
+		} else if ( $(".language-menu").is(":visible") ){
+			$(".language-menu").fadeOut();
+			$(".location-menu").fadeIn();
+		} else {
+			$(".location-menu").fadeIn();
 		}
 	});
 })

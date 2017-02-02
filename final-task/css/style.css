@@ -205,34 +205,34 @@ footer {
 	border-top: 1px solid #e0e0e0;
 }
 
-footer div.language-menu {
+footer div.language-menu, footer div.location-menu {
 	margin-top: 20px;  
 	margin-bottom: 20px;  
     border-bottom: 1px solid #e0e0e0;
 }
 
-footer div.language-menu ul li a {
+footer div.language-menu ul li a, footer div.location-menu ul li a  {
 	font-size: 11px;
 }
 
-footer div.language-menu ul li a#ukrainian {
+footer div.language-menu ul li a#ukrainian, footer div.location-menu ul li a#ukraine {
 	color: #000000;
 	text-decoration: none;
 	font-weight: bold;
 }
 
-footer div.language-menu p.lang-description span {
+footer div.language-menu p.lang-description span, footer div.location-menu p.location-description span {
 	font-size: 12px;
 }
 
-footer div.language-menu p.lang-description {
+footer div.language-menu p.lang-description, footer div.location-menu p.location-description {
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 10px;
     padding-left: 10px;
     font-size: 11px;
 }
 
-footer div.language-menu div.ul-cont-lang {
+footer div.language-menu div.ul-cont-lang, footer div.location-menu div.ul-cont-locat {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
