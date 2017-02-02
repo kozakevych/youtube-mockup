@@ -16,7 +16,7 @@ $(function (){
 		}
 	});
 
-
+	//for lower than 862 px
   	if ( $(window).width() < 862 ){
 	    $("#yt-logo-top").attr("src", "img/favicon.png");
 	    $("#video-frame").attr("width","560");
@@ -28,8 +28,6 @@ $(function (){
 	    $("#video-frame").attr("height","480");
 	    $(".top-right").show();	
 	}
-
-
 
 	$( $(window).resize(function(){
 		if ( $(window).width() < 862 ){
@@ -45,6 +43,8 @@ $(function (){
 		}
 	}))
 
+
+	//for lower than 450 px
 	if ( $(window).width() < 450 ){
 	    $("#video-frame").attr("width","426");
 	    $("#video-frame").attr("height","240");
@@ -52,8 +52,6 @@ $(function (){
 	    $("#video-frame").attr("width","560");
 	    $("#video-frame").attr("height","315");
 	}
-
-
 
 	$( $(window).resize(function(){
 		if ( $(window).width() < 450 ){
@@ -64,11 +62,25 @@ $(function (){
 		    $("#video-frame").attr("height","315");
 		}
 	}))
-// 450
-//426
-//240
+
+	//for lower than 400 px
+	if ( $(window).width() < 400 ){
+	    $("#video-frame").attr("width","370");
+	    $("#video-frame").attr("height","auto");
+	} else if ( $(window).width() < 450 ){	
+	    $("#video-frame").attr("width","426");
+	    $("#video-frame").attr("height","240");
+	}
+
+	$( $(window).resize(function(){
+		if ( $(window).width() < 400 ){
+		    $("#video-frame").attr("width","370");
+	    	$("#video-frame").attr("height","auto");
+		} else if ( $(window).width() < 450 ){
+		    $("#video-frame").attr("width","426");
+		    $("#video-frame").attr("height","240");
+		}
+	}))
+
 })
 
-
-//640 360
-//560 315
