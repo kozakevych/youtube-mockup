@@ -12,9 +12,9 @@ $(function (){
 	    $(".top-right").show();	
 	}
 
-	if ( location.pathname == "/youtube-mockup/final-task/index.html" || location.pathname == "/youtube-mockup/final-task/index.html#" || location.pathname == "/youtube-mockup/final-task/" || location.pathname == "/youtube-mockup/final-task/#") {
-		$(".nav-sections a#main-page-link").css("border-bottom", "3px solid #D61212");
-	}
+	//if ( location.pathname == "/youtube-mockup/final-task/index.html" || location.pathname == "/youtube-mockup/final-task/index.html#" || location.pathname == "/youtube-mockup/final-task/" || location.pathname == "/youtube-mockup/final-task/#") {
+	//	$(".nav-sections a#main-page-link").css("border-bottom", "3px solid #D61212");
+	//}
 
 
 	$("#toggle").click( function(){
@@ -56,10 +56,8 @@ $(function (){
     // run test on resize of the window
     
 
-    $(".video-name").on("click", function(){
-    	localStorage.setItem("nameVideo", $(this).text());
-    	;
-    	localStorage.setItem("nameCut", $(this).text().replace(/\s+/g, ''));
+    $(".video-link").on("click", function(){
+    	localStorage.setItem("videoSrc", $(this).attr("data-video-src"));
     });
 
 })

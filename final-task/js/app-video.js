@@ -5,7 +5,12 @@ $(function (){
 	//$(".under-nav").css("padding-left", 0);
 	//$(".main-body").css("padding-left", 0);
 	//$("footer").css("padding-left", 32);
-	$("iframe").attr("src", "https://www.youtube.com/embed/" + + "?controls=1&autoplay=1");
+	if (localStorage.videoSrc == "undefined"){
+		localStorage.videoSrc = "B7VSlGBg5KQ";
+	}
+
+	var videoKey = localStorage.videoSrc;
+	$("iframe").attr("src", "https://www.youtube.com/embed/" + videoKey + "?controls=1&autoplay=1");
 
 	$("#toggle").click( function(){
 		if ( $(".side-nav").is(":visible") ){
@@ -19,7 +24,7 @@ $(function (){
 /*
 var localkey = localStorage.namevideo;
 var listOfVideos = {
-	"AlanWalker-Alone" : "1-xGerv5FOk",
+	"AlanWalker-Alone" : "0",
 	"Fight Night Denver" : "B7VSlGBg5KQ"
 }
 

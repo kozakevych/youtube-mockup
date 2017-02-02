@@ -26,13 +26,13 @@ div.main-body div.main-video {
 .video-nav {
 	background: #FFFFFF;
 	padding: 10px 5px;
-	width: 
+	margin-left: 12px;
 }
 
 div.main-body div.video-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	width: 91%;
 	margin-right: auto;
 	margin-left: auto;
