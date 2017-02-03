@@ -1,7 +1,7 @@
 
 $(function (){
 	
-	if (localStorage.videoSrc == "undefined"){
+	if (localStorage.videoSrc == undefined){
 		localStorage.videoSrc = "B7VSlGBg5KQ";
 	}
 
